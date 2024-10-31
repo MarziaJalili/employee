@@ -1,0 +1,84 @@
+:where(*, *::after, *::before) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f3e2;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ebc322;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+
+header span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header a {
+    background-color: white;
+    color: #ebc322;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+main {
+    padding: 4rem;
+    color: #ebc322;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+table {
+    background-color: white;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+th {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: #ebc322;
+    font-size: 1.4rem;
+}
+
+td {
+    padding: 1rem;
+    border: 1px solid #fceaa3;
+    font-size: 1.15rem;
+}
+
+td a {
+    background-color: #fceaa3;
+    text-decoration: none;
+    color: #ebc322;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+table img {
+    width: 40px;
+}

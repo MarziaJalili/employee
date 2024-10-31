@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f3e2;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ebc322;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+
+}
+
+header span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header a {
+    background-color: white;
+    color: #ebc322;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+header i {
+    font-size: 1.2rem;
+}
+
+
+aside {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    height: 100vh;
+    gap: 0.6rem;
+    background-color: #fcf0c2;
+    padding: 2rem 2.5rem;
+}
+
+
+
+
+
+
+aside .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+aside .logo h2 {
+    color: #333;
+}
+
+aside i {
+    font-size: 1.2rem;
+    color: #ebc322;
+}
+
+aside .logo i {
+    font-size: 2.5rem;
+}
+
+aside .logo span {
+    display: block;
+    font-size: 0.6rem;
+}
+
+aside .page-selection {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 0.8rem;
+    color: #ebc322;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border-left: transparent 5px solid;
+
+}
+
+
+
+aside .page-selection.active {
+    background-color: rgba(140, 133, 100, 0.1);
+    border-left: 5px solid #ebc322;
+
+}
+
+.page-selection i {
+    display: grid;
+    place-items: center;
+}
+
+.dashboard {
+    margin: 5rem;
+    display: grid;
+    gap: 3rem;
+    color: #ebc322;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.dashboard-contents {
+    display: flex;
+    gap: 3rem;
+}
+
+.dashboard-contents a {
+    text-decoration: none;
+    color: #ebc322;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 240px;
+    box-shadow: 0 10px 20px 5px rgba(140, 133, 100, 0.3);
+    cursor: pointer;
+}
+
+/* status page */
+
+.dashboard section {
+    background-color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    display: grid;
+    gap: 1rem;
+    box-shadow: 0 10px 20px 5px rgba(140, 133, 100, 0.1);
+}
+
+.dashboard section ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    color: white;
+    gap: 2px;
+    font-size: 1.4rem;
+}
+
+.dashboard section ul li {
+    background-color: #ebc322;
+    padding: 8px 12px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.dashboard section ul li:first-child {
+    border-top-left-radius: 10px;
+}
+
+.dashboard section ul li:last-child {
+    border-top-right-radius: 10px;
+}
+
+.dashboard section ul+span {
+    color: #f6de7d;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/* emloyee's profile ->  dashbord*/
+
+.recently-uploaded table {
+    background-color: white;
+    box-shadow: 0 30px 40px 5px rgba(140, 133, 100, 0.1);
+
+}
+
+.recently-uploaded thead {
+    background-color: #ebc322;
+    color: white;
+}
+
+.recently-uploaded :is(th, td) {
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border: 1px solid #f6de7d;
+}
+
+.recently-uploaded td {
+    color: #fad74c;
+}
+
+/* employee's profile -> add new status */
+
+.add-new-status {
+    padding: 2rem;
+    max-width: 50%;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 5px rgba(140, 133, 100, 0.2);
+
+}
+
+
+.add-new-status form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+.add-new-status form {
+    display: grid;
+    gap: 1rem;
+}
+
+.add-new-status form label {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+.add-new-status form label input,
+.add-new-status textarea {
+    font: inherit;
+    font-weight: 400;
+    border: 1px solid #d5d4d4;
+    border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.add-new-status form textarea {}
+
+
+.add-new-status form button {
+    background-color: #ebc322;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px #edd46e;
+}

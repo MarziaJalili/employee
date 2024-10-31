@@ -1,0 +1,68 @@
+body {
+    background: #ebc322;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: "Poppins";
+}
+
+.container {
+    background-color: white;
+    padding: 4rem;
+    gap: 1.5rem;
+    border-radius: 10px;
+    display: grid;
+    min-width: 40%;
+    min-height: 50%;
+    box-shadow: 0 0 20px 0 white;
+
+}
+
+.logo {
+    display: flex;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: start;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+h1 span {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+
+}
+
+.logo {
+    font-size: 7rem;
+    color: #ebc322;
+}
+
+button,
+.button-link {
+    background-color: #ebc322;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border: none;
+    font: inherit;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #ebc322;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
